@@ -28,7 +28,7 @@ experience_time = st.time_input("Select a time!")
 
 f = open("Experience-Reservation-Streamlit-Test.csv", 'w')
 writer = csv.writer(f, delimiter = ',')
-writer.writerow([experience_type, 691329, child_first_name, child_last_name, experience_date, experience_time, NOW(), ""])
+writer.writerow([experience_type, 691329, child_first_name, child_last_name, experience_date, experience_time, "", ""])
 f.close()
 
 
