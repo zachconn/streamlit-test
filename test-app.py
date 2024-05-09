@@ -18,7 +18,6 @@ def form_callback(list1):
  with open('Experience-Reservation-Streamlit-Test.csv', 'a+') as f:
   writer = csv.writer(f)
   writer.writerow(list1)
-  f.close()
 
 with st.form(key="my_form",clear_on_submit=True):
     
@@ -37,7 +36,9 @@ with st.form(key="my_form",clear_on_submit=True):
      st.write(list1)
      form_callback(list1)
 
-st.download_button("Download")
+st.download_button(label = "Download", 
+                  data = f, 
+                  file_name = "sttest.csv")
 
 
 tab1, tab2, tab3 = st.tabs(["Star Experience", "Rockin' Spa", "Olivia's Oasis"])
