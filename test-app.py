@@ -38,10 +38,10 @@ with st.form(key="my_form",clear_on_submit=True):
      res.append(newdf)
      form_callback(list1)
 
+st.dataframe(res)
 st.download_button(label = "Download", 
                   data = res, 
-                  file_name = "sttest.csv",
-                  "csv/text")
+                  file_name = "sttest.csv")
 
 
 tab1, tab2, tab3 = st.tabs(["Star Experience", "Rockin' Spa", "Olivia's Oasis"])
