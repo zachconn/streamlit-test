@@ -32,7 +32,8 @@ with st.form(key="my_form",clear_on_submit=True):
 
     list1 = [experience_type, "", child_first_name, child_last_name, experience_date, experience_time, "", ""]
     if submitted:
-        form_callback(list1)
+     st.write(list1)
+     form_callback(list1)
  
 
 
