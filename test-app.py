@@ -4,6 +4,6 @@ import pandas as pd
 st.write("""
 Test Documentation
 """)
- 
-df = pd.read_csv("my_data.csv")
-st.line_chart(df)
+with st.chat_message("user"):
+ st.write("Hello!")
+ st.line_chart(np.random.randn(100,2))
