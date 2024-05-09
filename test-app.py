@@ -25,15 +25,12 @@ experience_type = st.selectbox("Which experience would you like to book today?",
 experience_date = st.date_input("Select a date!")
 experience_time = st.time_input("Select a time!")
 
-submitted = st.button("Submit", type= "primary")
-
-
-if submitted == TRUE:
+if st.button("Submit", type= "primary"):
  f = open("Experience-Reservation-Streamlit-Test.csv", 'w')
  writer = csv.writer(f, delimiter = ',')
  writer.writerow([experience_type, 691329, child_first_name, child_last_name, experience_date, experience_time, "", ""])
  f.close()
- submitted = FALSE
+ 
 
 
 tab1, tab2, tab3 = st.tabs(["Star Experience", "Rockin' Spa", "Olivia's Oasis"])
