@@ -13,3 +13,6 @@ st.chat_input("Say something!")
 
 with st.container():
   st.chat_input("Say Something!")
+
+
+tab1, tab2 = st.tabs(["Star Experience", "Rockin' Spa", "Olivia's Oasis"])
