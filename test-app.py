@@ -21,5 +21,8 @@ with st.container():
 x = st.slider("Select a value")
 st.write(x, "squared is", x * x)
 
+y = st.date_input("Select a date!")
+st.write(y, "is not available")
+
 
 tab1, tab2, tab3 = st.tabs(["Star Experience", "Rockin' Spa", "Olivia's Oasis"])
