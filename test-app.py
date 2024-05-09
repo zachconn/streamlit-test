@@ -5,7 +5,7 @@ import os
 
 print(os.getcwd())
 
-res = pd.read_csv("Experience-Reservation-Streamlit-Test.csv")
+#res = pd.read_csv("Experience-Reservation-Streamlit-Test.csv")
 
 
 st.write("""
