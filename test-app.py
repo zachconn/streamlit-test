@@ -3,10 +3,8 @@ import pandas as pd
 import numpy as np
 import os
 
-print(os.getcwd())
-
-#res = pd.read_csv("Experience-Reservation-Streamlit-Test.csv")
-
+res = pd.read_csv("Experience-Reservation-Streamlit-Test.csv")
+st.dataframe(res)
 
 st.write("""
 Test Documentation
