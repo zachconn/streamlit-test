@@ -14,5 +14,8 @@ st.chat_input("Say something!")
 with st.container():
   st.chat_input("Say Something!")
 
+x = st.slider("Select a value")
+st.write(x, "squared is", x * x)
+
 
 tab1, tab2 = st.tabs(["Star Experience", "Rockin' Spa", "Olivia's Oasis"])
