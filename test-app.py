@@ -4,6 +4,9 @@ import numpy as np
 import os
 import csv
 
+if st.button("Logout"):
+    st.switch_page("login-page.py")
+ 
 res = pd.read_csv("Experience-Reservation-Streamlit-Test.csv")
 st.dataframe(res)
 
