@@ -34,10 +34,12 @@ with st.form(key="my_form",clear_on_submit=True):
     list1 = [experience_type, "", child_first_name, child_last_name, experience_date, experience_time, "", ""]
     if submitted:
      st.write(list1)
+     newdf = pd.DataFrame(lsit1)
+     res.append(newdf)
      form_callback(list1)
 
 st.download_button(label = "Download", 
-                  data = f, 
+                  data = res, 
                   file_name = "sttest.csv")
 
 
