@@ -8,16 +8,10 @@ res = pd.read_csv("Experience-Reservation-Streamlit-Test.csv")
 st.dataframe(res)
 
 st.write("""
-Test Documentation
+Give Kids The World Experience Reservations
 """)
 with st.chat_message("user"):
  st.write("Hello!")
- st.line_chart(np.random.randn(100,2))
-
-def form_callback(list1):
- with open('Experience-Reservation-Streamlit-Test.csv', 'a+') as f:
-  writer = csv.writer(f)
-  writer.writerow(list1)
 
 with st.form(key="my_form",clear_on_submit=True):
     
