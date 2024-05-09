@@ -36,7 +36,8 @@ with st.form(key="my_form",clear_on_submit=True):
     if submitted:
      st.write(list1)
      form_callback(list1)
- 
+
+st.download_button("Download")
 
 
 tab1, tab2, tab3 = st.tabs(["Star Experience", "Rockin' Spa", "Olivia's Oasis"])
