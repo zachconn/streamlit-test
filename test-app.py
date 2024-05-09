@@ -36,8 +36,9 @@ with st.form(key="my_form",clear_on_submit=True):
      st.write(list1)
      newdf = pd.DataFrame(list1)
      pd.concat([res,newdf])
-     form_callback(list1)
+     
 
+st.dataframe(list1)
 st.dataframe(res)
 
 
