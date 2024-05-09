@@ -16,7 +16,8 @@ with st.chat_message("user"):
 
 def form_callback(list1):
  with open('Experience-Reservation-Streamlit-Test.csv', 'a+') as f:
-  f.write(f"{list1[0], list1[1], list1[2], list1[3], list1[4], list1[5], list1[6], list1[7]}\n")
+  writer = csv.writer(f)
+  writer.writerow(list1)
   f.close()
 
 with st.form(key="my_form",clear_on_submit=True):
