@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 
-print(os.getdir())
+print(os.getcwd())
 
 res = pd.read_csv("Experience-Reservation-Streamlit-Test.csv")
 
