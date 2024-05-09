@@ -1,6 +1,12 @@
 import streamlit as st
 import pandas as pd 
 import numpy as np
+import os
+
+os.chdir("/Downloads")
+
+res = pd.read_csv("Experience-Reservation-Streamlit-Test.csv")
+
 
 st.write("""
 Test Documentation
