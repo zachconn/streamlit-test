@@ -40,7 +40,8 @@ with st.form(key="my_form",clear_on_submit=True):
 
 st.download_button(label = "Download", 
                   data = res, 
-                  file_name = "sttest.csv")
+                  file_name = "sttest.csv",
+                  "csv/text")
 
 
 tab1, tab2, tab3 = st.tabs(["Star Experience", "Rockin' Spa", "Olivia's Oasis"])
