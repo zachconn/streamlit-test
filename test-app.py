@@ -33,7 +33,7 @@ with st.form(key="my_form",clear_on_submit=True):
      st.write(list1)
      res.loc[len(res)] = list1
      
-
+ 
 st.dataframe(list1)
 st.dataframe(res)
 
