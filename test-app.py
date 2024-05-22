@@ -8,13 +8,10 @@ if st.button("Logout"):
     st.switch_page("login-page.py")
  
 res = pd.read_csv("Experience-Reservation-Streamlit-Test.csv")
-st.dataframe(res)
  
-st.write("""
+st.title("""
 Give Kids The World Experience Reservations
 """)
-with st.chat_message("user"):
- st.write("Hello!")
 
 with st.form(key="my_form",clear_on_submit=True):
     
@@ -33,8 +30,9 @@ with st.form(key="my_form",clear_on_submit=True):
      st.write(list1)
      res.loc[len(res)] = list1
      
- 
-st.dataframe(list1)
+ with st.chat_message("user"):
+ st.write("Hello! Can I help with something?")
+
 st.dataframe(res)
 
 
